@@ -1,0 +1,45 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "content/homepage.json"
+        fields:
+          - { label: "Hero Headline", name: "hero_headline", widget: "string" }
+          - { label: "Hero Subtext", name: "hero_sub", widget: "text" }
+          - { label: "Scripture Text", name: "scripture_text", widget: "text" }
+          - { label: "Scripture Reference", name: "scripture_ref", widget: "string" }
+          - { label: "Daily Word Title", name: "daily_title", widget: "string" }
+          - { label: "Daily Word Body", name: "daily_body", widget: "text" }
+          - { label: "Daily Word Quote", name: "daily_quote", widget: "text" }
+          - { label: "Daily Word Reference", name: "daily_ref", widget: "string" }
+      - name: "about"
+        label: "About Page"
+        file: "content/about.json"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Intro Paragraph", name: "intro", widget: "text" }
+          - { label: "Pull Quote", name: "quote", widget: "text" }
+          - { label: "Body Paragraph", name: "body", widget: "text" }
+          - { label: "Mission Statement", name: "mission", widget: "text" }
+      - name: "prayer"
+        label: "Prayer Page"
+        file: "content/prayer.json"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Intro Text", name: "intro", widget: "text" }
+          - { label: "Info Box Text", name: "box_body", widget: "text" }
+      - name: "booking"
+        label: "Booking Page"
+        file: "content/booking.json"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Intro Text", name: "intro", widget: "text" }
